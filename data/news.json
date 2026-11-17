@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-17T16:19:12.880604+08:00",
+  "updated_at": "2026-11-17T16:45:56.137700+08:00",
   "date": "2026-11-17",
-  "count": 146,
+  "count": 147,
   "sources": [
     "FT中文网",
     "CNBC 财经",
@@ -11,6 +11,16 @@
     "Yahoo 财经"
   ],
   "items": [
+    {
+      "title": "Treasury yields are broadly flat as investors await retail sales data",
+      "link": "https://www.cnbc.com/2026/11/17/treasury-yields-bonds-inflation.html",
+      "summary": "U.S. Treasury yields were little changed on Tuesday morning as investors awaited economic data and comments from Federal Reserve officials later in the session.",
+      "source": "CNBC 头条",
+      "lang": "en",
+      "category": "宏观政策",
+      "published_at": "2026-11-17T16:23:51+08:00",
+      "image": ""
+    },
     {
       "title": "Which areas have the most jobs for 16-24 year-olds? Use our look-up to find out",
       "link": "https://www.bbc.co.uk/news/articles/cw3djdjk5d7ko?at_medium=RSS&at_campaign=rss",
@@ -622,6 +632,16 @@
       "image": ""
     },
     {
+      "title": "英伟达董事会不考虑恢复黄仁勋的CEO职位",
+      "link": "https://www.ftchinese.com/story/001111390",
+      "summary": "特朗普表示对黄仁勋复出持开放态度。董事会表示，在遴选新任首席执行官时，将同时考虑内部和外部候选人。",
+      "source": "FT中文网",
+      "lang": "zh",
+      "category": "科技公司",
+      "published_at": "2026-11-17T00:00:00+08:00",
+      "image": ""
+    },
+    {
       "title": "克里姆林宫希望中美俄会晤后发表“联合声明”",
       "link": "https://www.ftchinese.com/story/001111389",
       "summary": "特朗普、习近平和普京将在周四举行史无前例的三方会晤，这已引起国际社会的密切关注。",
@@ -1228,16 +1248,6 @@
       "source": "FT中文网",
       "lang": "zh",
       "category": "宏观政策",
-      "published_at": "2026-11-11T00:00:00+08:00",
-      "image": ""
-    },
-    {
-      "title": "Anthropic寻求以1.4万亿美元估值上市",
-      "link": "https://www.ftchinese.com/story/001111328",
-      "summary": "这一目标估值显著高于这家AI公司5月进行上一轮私募融资时达到的9650亿美元。",
-      "source": "FT中文网",
-      "lang": "zh",
-      "category": "基金理财",
       "published_at": "2026-11-11T00:00:00+08:00",
       "image": ""
     },
