@@ -15,7 +15,7 @@
       <div class="logo">财</div>
       <div>
         <h1>每日财经新闻</h1>
-        <p>每天自动收集 · 中英财经资讯 · 分类聚合 · 免费开源</p>
+        <p>中国 / 全球双视角 · 十大板块 · 每天自动更新</p>
       </div>
       <div class="top-actions">
         <button class="btn" id="themeBtn">🌙 深色</button>
@@ -25,8 +25,8 @@
     </div>
     <div class="stats">
       <div class="stat"><b id="statCount">--</b>今日收录新闻</div>
-      <div class="stat"><b id="statDate">--</b>新闻日期</div>
-      <div class="stat"><b id="statSources">--</b>聚合来源</div>
+      <div class="stat"><b id="statCN">--</b>🇨🇳 中国市场</div>
+      <div class="stat"><b id="statGL">--</b>🌍 全球市场</div>
       <div class="stat"><b id="statUpdate" style="font-size:13px">--</b>最后更新</div>
     </div>
   </div>
@@ -42,6 +42,7 @@
 </div>
 
 <main class="wrap">
+  <div class="tabs" id="regions"></div>
   <div class="chips" id="chips"></div>
   <div class="meta-line" id="metaLine">加载中…</div>
   <div class="grid" id="grid"></div>
@@ -50,7 +51,7 @@
 
 <footer>
   <div class="wrap">
-    <b>每日财经新闻</b> · 数据来源：FT中文网 / CNBC / MarketWatch / BBC Business / Yahoo 财经（RSS 公开资讯，仅作聚合展示，版权归原站所有）<br>
+    <b>每日财经新闻</b> · 中国：人民网财经 / FT中文网 / SCMP中国 / 谷歌新闻（上证·港股·央行·地产·科技·黄金·医药·汇率·汽车）；全球：CNBC / MarketWatch / BBC / Yahoo / SCMP环球（RSS 公开资讯聚合展示，版权归原站所有）<br>
     自动更新方式：<kbd>python scripts/fetch_news.py</kbd> 每日运行，或使用 <kbd>.github/workflows/daily.yml</kbd> 在 GitHub Actions 上每天北京时间 8:00 自动抓取并提交。<br>
     本地预览：在本目录运行 <kbd>python -m http.server 8000</kbd> 后访问 <kbd>http://localhost:8000</kbd> · © <span id="year"></span> 每日财经
   </div>
