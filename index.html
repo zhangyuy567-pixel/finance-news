@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日财经 · 每天自动收集的财经新闻</title>
+<meta name="description" content="每日财经新闻聚合站：每天自动抓取 FT中文网、CNBC、MarketWatch、BBC、Yahoo 财经等来源，按分类整理展示。">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23b91c1c'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-weight='bold'>财</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">财</div>
+      <div>
+        <h1>每日财经新闻</h1>
+        <p>每天自动收集 · 中英财经资讯 · 分类聚合 · 免费开源</p>
+      </div>
+      <div class="top-actions">
+        <button class="btn" id="themeBtn">🌙 深色</button>
+        <button class="btn" id="refreshBtn">↻ 刷新</button>
+        <button class="btn solid" id="todayBtn">今日头条</button>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="statCount">--</b>今日收录新闻</div>
+      <div class="stat"><b id="statDate">--</b>新闻日期</div>
+      <div class="stat"><b id="statSources">--</b>聚合来源</div>
+      <div class="stat"><b id="statUpdate" style="font-size:13px">--</b>最后更新</div>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap">
+    <div class="search">🔍 <input id="searchInput" placeholder="搜索新闻：如 降息 / 黄金 / 英伟达 / Fed …"></div>
+    <select id="langSel"><option>全部</option><option>中文</option><option>英文</option></select>
+    <select id="sortSel"><option value="new">最新优先</option><option value="old">最早优先</option></select>
+    <select id="dateSel"><option>全部</option></select>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="chips" id="chips"></div>
+  <div class="meta-line" id="metaLine">加载中…</div>
+  <div class="grid" id="grid"></div>
+  <button class="load-more" id="moreBtn" style="display:none">加载更多</button>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>每日财经新闻</b> · 数据来源：FT中文网 / CNBC / MarketWatch / BBC Business / Yahoo 财经（RSS 公开资讯，仅作聚合展示，版权归原站所有）<br>
+    自动更新方式：<kbd>python scripts/fetch_news.py</kbd> 每日运行，或使用 <kbd>.github/workflows/daily.yml</kbd> 在 GitHub Actions 上每天北京时间 8:00 自动抓取并提交。<br>
+    本地预览：在本目录运行 <kbd>python -m http.server 8000</kbd> 后访问 <kbd>http://localhost:8000</kbd> · © <span id="year"></span> 每日财经
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
